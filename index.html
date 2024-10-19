@@ -1,171 +1,203 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr ">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Creeford">
-    <meta name="author" content="Creeford">
-    <meta name="author" content="Creeford">
-    <title>Guil'de-Guide home page</title>
-    <link rel="stylesheet" href="./src/css/style.css" media="all">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Duan Wang">
+    <meta name="description" content="My web project">
+    <meta name="keyword" content="html, css, web, seo, web development">
+    <title>Duan | Web Developer</title>
+    <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css" media="all">
+    <link rel="stylesheet" href="./assets/css/style.css" media="all">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" >
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="./src/img/group-4-logo.svg" type="x-icon">
+    <script src="./assets/js/index.js" defer></script>
   </head>
   <body>
     <header>
-      <div class="container flex space ">
-        <a href="./index.html" class="logo">
-          <div class="flex">
-          <i class="fa-brands fa-guilded"></i>
-          <h1>Guide</h1>
-        </div> 
-      </a>
-        <div class="info-tab flex">
-          <a class="">Destination</a>
-          <a class="">Travel Styles</a>
-          <a class="">Why Guil'de-Guide</a>
-          <a class="">Deals</a>
-          <a class="" href="./about-us.html">About us</a>
-          <a class="" href="./contact-us.html">Contact us</a>
+      <div class="container flex space">
+        <a href="#main"><h1>DUAN</h1></a>
+        <div class="flex">
+            <a href="#main">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#myproject">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
         </div>
-        <div class="info-bars">
-          <i class="fa-solid fa-bars"></i>
-        </div>
-        <nav>
-          <ul>
-            <li>
-              <a href="./index.html">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </a>
-            </li>
-            <li>
-              <a href="./contact-us.html">
-                <i class="fa-solid fa-phone"></i>
-              </a>
-            </li>
-            <li>
-              <a href="about-us.html">
-                <i class="fa-solid fa-user"></i>
-              </a>
-            </li>
-          </ul>
-        </nav>
       </div>
-    </header> 
+    </header>
+    <main id="main" class="container">
+      <section class="block flex row">
+        <div class="col intro">
+          <p class="highlight-one">HELLO!</p>
+          <h1>I'm <span class="highlight-one">Duan</span></h1>
+          <h1>A <span class="highlight-one">web designer</span></h1>
+          <h1>based in Winnipeg</h1>
+          <button class="hire" href="#">HIRE ME</button>
+        </div>
+        <img class="col duan-one" src="./assets/img/home.png" alt="duan">
+      </section>
 
-    <main>
-      <section>
-        <div class="hero-banner flex center">
-          <div class="hero-banner-main">
-            <div class="content-web">
-              <h1>
-                <span>Bring a group to</span>travel along
-              </h1>
-            </div>
-            <div class="search-bar flex center margin-top">
-                <input type="text" placeholder="Where is your destination?">
-                <input type="submit" value="Search" class="submit-btn">
-            </div>
+      <section id="about" class="about block flex row">
+        <img class="col duan-two" src="./assets/img/aboutme.png" alt="duan">
+        <div class="col aboutme">
+          <h1>About Me</h1>
+          <p>
+            I have been engaged in technical work for 
+            <span class="highlight-one">10+ years</span>. 
+            I can speak <span class="highlight-one">English & Mandarin</span> 
+            as my working language.
+          </p>
+          <div class="detail">
+            <p>
+              <span class="highlight-two">Name:</span> 
+              Duan Wang
+            </p>
+            <p>
+              <span class="highlight-two">Address:</span> 
+              130 Henlow Bay, Winnipeg, MB
+            </p>
+            <p>
+              <span class="highlight-two">Zip code:</span> 
+              R3Y 1G4
+            </p>
+            <p>
+              <span class="highlight-two">Email:</span> 
+              daniel.w2301@gmail.com
+            </p>
+            <p>
+              <span class="highlight-two">Phone:</span> 
+              204-888-8888
+            </p>
           </div>
+          <button class="download">DOWNLOAD CV</button>
         </div>
       </section>
 
-      <div class="container margin-top">
-        <div class="description-main">
-          <h2>Explore the World with Special September Discounts</h2>
-          <div class="paragraph-box">
-            <p>
-              This September, take advantage of 15% savings on an exciting range
-               of trips around the world. Whether you're dreaming of France,
-               Guatemala, Kenya, Iceland, or Vietnam, we've got incredible 
-               dealsto make your next adventure more affordable. Don’t 
-               miss out—browse the offers and start planning 
-               your escape! Terms and Conditions apply.
-            </p> 
+      <section id="skills" class="skills block grid">
+        <div>
+          <h1>My Skills</h1>
+        </div>
+        <div class="part flex row">
+          <div class="col">
+            <p>HTML</p>
+            <progress value="95" max="100"></progress>
+            <span class="percentage" id="percentage">95%</span>
+          </div>
+          <div class="col">
+            <p>Network Admin</p>
+            <progress value="95" max="100"></progress>
+            <span class="percentage" id="percentage">95%</span>
           </div>
         </div>
-
-        <section class="content-box flex row center">
-          <div class="box content1">
-            <img src="./src/img/town-img.jpg">
-            <p class="duration">6 DAY TOUR</p>
-            <p class="trip-title">Brazil</p>
-            <p class="departure">On Oct 04, 2024</p>
-            <div class="cost flex">
-              <i class="fa-solid fa-dollar-sign"></i>
-              <p><span>217</span>per person</p>
-            </div>
+        <div class="part flex row">
+          <div class="col">
+            <p>CSS</p>
+            <progress value="90" max="100"></progress>
+            <span class="percentage" id="percentage">90%</span>
           </div>
-
-          <div class="box content2">
-            <img src="./src/img/clift-ocean-img.jpg">
-            <p class="duration">6 DAY TOUR</p>
-            <p class="trip-title">Brazil</p>
-            <p class="departure">On Oct 04, 2024</p>
-            <div class="cost flex">
-              <i class="fa-solid fa-dollar-sign"></i>
-              <p><span>217</span>per person</p>
-            </div>
+          <div class="col">
+            <p>Computer Maintenance</p>
+            <progress value="95" max="100"></progress>
+            <span class="percentage" id="percentage">95%</span>
           </div>
-
-          <div class="box content3">
-            <img src="./src/img/louvre-paris-img.jpg">
-            <p class="duration">6 DAY TOUR</p>
-            <p class="trip-title">Brazil</p>
-            <p class="departure">On Oct 04, 2024</p>
-            <div class="cost flex">
-              <i class="fa-solid fa-dollar-sign"></i>
-              <p><span>217</span>per person</p>
-            </div>
+        </div>
+        <div class="part flex row">
+          <div class="col">
+            <p>JavaScript</p>
+            <progress value="80" max="100"></progress>
+            <span class="percentage" id="percentage">80%</span>
           </div>
-          
-          <div class="box content4">
-            <img src="./src/img/mt-fuji-img.jpg" >
-            <p class="duration">6 DAY TOUR</p>
-            <p class="trip-title">Brazil</p>
-            <p class="departure">On Oct 04, 2024</p>
-            <div class="cost flex">
-              <i class="fa-solid fa-dollar-sign"></i>
-              <p><span>217</span>per person</p>
-            </div>
+          <div class="col">
+            <p>Product Management</p>
+            <progress value="95" max="100"></progress>
+            <span class="percentage" id="percentage">95%</span>
+          </div>
+        </div>
+      </section>
+      <section id="myproject" class="myprojects block grid">
+        <h1>My Project</h1>
+        <p class="detail">
+          Here are a few past design projects I've worked on. 
+          Want to see more? Email me.
+        </p>
+        <section class="flex row-three">
+          <div class="example">
+            <a href="https://moonlit-scone-b629a3.netlify.app/" target="_blank">
+              <img class="project" src="./assets/img/project-1.jpg" value="project">
+            </a>            
+          </div>
+          <div class="example">
+            <a href="https://dainty-tulumba-41b330.netlify.app/" target="_blank">
+              <img class="project" src="./assets/img/project-2.png" value="project">
+            </a>            
+          </div>
+          <div class="example">
+            <a href="https://dreamy-tanuki-473a89.netlify.app/" target="_blank">
+              <img class="project" src="./assets/img/project-3.png" value="project">
+            </a>            
           </div>
         </section>
-      </div>
+      </section>
+      <section id="education" class="education block grid">
+        <h1>My Education</h1>
+        <div class="school grid">
+          <h2><span class="highlight-one">Software Developer</span></h2>
+          <p>Diploma</p>
+          <p>Sep 2024 - Aug 2025</p>
+          <p>MITT • Winnipeg, Manitoba</p>
+        </div>
+        <div class="school grid">
+          <h2><span class="highlight-one">Information Systems</span></h2>
+          <p>Certificate</p>
+          <p>Sep 2023 - Jun 2024</p>
+          <p>Louis Riel Arts & Technology Centre • Winnipeg, Manitoba</p>
+        </div>
+        <div class="school grid">
+          <h2>
+            <span class="highlight-one">
+              Electrical Engineering and Automation
+            </span>
+          </h2>
+          <p>Bachelor's degree</p>
+          <p>Sep 2004 - Jun 2008</p>
+          <p>Hubei University of Technology • Wuhan, China</p>
+        </div>
+      </section>
+      <section id="contact" class="contact block grid">
+        <h1>Contact Me</h1>
+        <p class="detail">If you want to know more about me, please contact me!</p>
+        <div class="flex row-three">
+          <div class="media">
+            <i class="fa-solid fa-phone-volume"></i>
+            <p class="detail">Phone Number: 204-888-8888</p>
+          </div>
+          <div class="media">
+            <a href="mailto:example@example.com?subject=Email Subject&body=Email Body">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <p class="detail">Email: daniel.w2301@gmail.com</p>
+          </div>
+          <div class="media">
+            <a href="https://www.facebook.com/" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <p class="detail">Facebook</p>
+          </div>
+        </div>
+      </section>
+      <button class="to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
     </main>
 
-    <footer class="desktop-footer margin-top">
-      <div class=" container footer-content">
-        <div class="footer-section">
-          <h4>Company</h4>
-          <ul>
-            <li><a href="./about-us.html">About Us</a></li>
-            <li><a href="./contact-us.html">Contact</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Press</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h4>Support</h4>
-          <ul>
-            <li><a href="#">Help Center</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h4>Follow Us</h4>
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 YourCompany | All Rights Reserved</p>
+    <footer class="flex">
+      <div>
+        <p>&copy; 2024 DUAN WANG | All Rights Reserved</p>
       </div>
     </footer>
   </body>

@@ -1,0 +1,328 @@
+:root {
+    --app-light-background: #efedf5;
+    --app-font-color:#e07398;
+    --app-icon-color: #5ae8b9;
+    --app-footer-color:#777579;
+    --app-box-radius: 15px;
+    --app-button-radius: 20px;
+    --app-image-radius: 40%;
+}
+
+body {
+    background-color: var(--app-light-background);
+}
+
+.to-top {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    display: none;
+    border: 2px solid var(--app-font-color);
+    color: var(--app-font-color);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-weight: 500;
+    font-size: 14px;
+
+    i {
+        font-size: 20px;
+    }
+
+}
+
+.to-top:hover {
+    background-color: var(--app-font-color);
+    color: #fff;
+    transition: ease-in-out 0.25s;
+}
+
+/*--------------------------------------------*/
+/*Utility classes                             */
+/*--------------------------------------------*/
+
+.container {
+    width: min(100% - 30px, 1200px);
+    margin-inline: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display:grid;
+    place-items: center;
+}
+
+.space {
+    justify-content: space-between;
+}
+
+.row {
+    gap:80px;
+    flex-wrap: wrap;
+}
+
+.row-three {
+    flex-wrap: wrap;
+}
+
+.col {
+    width: calc(50% - 40px);
+}
+
+.block {
+    margin:80px 0 150px;
+}
+
+/*--------------------------------------------*/
+/*Header                                      */
+/*--------------------------------------------*/
+
+header {
+    height: 72px;
+    line-height: 72px;
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 1000; 
+    background-color: var(--app-light-background);
+
+    h1 {
+        font-size: 25px;
+        color: var(--app-font-color);
+    }
+    
+    a {
+        text-decoration-line: none;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 0 40px 0 0;
+        color: #000;
+    }
+
+    a:hover {
+        color: var(--app-font-color);
+        transform: scale(1.2);
+        transition: ease-in-out 0.25s;
+    }
+}
+
+main {
+    padding-top: 72px;
+}
+
+/*--------------------------------------------*/
+/*Home                                        */
+/*--------------------------------------------*/
+
+
+.intro {
+    padding: 80px 0;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.highlight-one {
+    color: var(--app-font-color)
+}
+
+.hire {
+    margin-top: 20px;
+    width: 100px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 14px;
+    border: 2px solid var(--app-font-color);
+    color: var(--app-font-color);
+    border-radius: var(--app-button-radius);
+}
+
+.hire:hover {
+    background-color: var(--app-font-color);
+    color: #fff;
+    transition: ease-in-out 0.25s;
+}
+
+.duan-one {
+    border-radius: var(--app-image-radius);
+}
+
+/*--------------------------------------------*/
+/*About Me                                    */
+/*--------------------------------------------*/
+
+.about {
+    scroll-margin-top: 80px;
+}
+
+.duan-two {
+    border-radius: var(--app-image-radius);
+}
+
+.aboutme {
+    padding: 50px;
+}
+.detail {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.download {
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 14px;
+    border: 2px solid var(--app-font-color);
+    color: var(--app-font-color);
+    border-radius: var(--app-button-radius);
+}
+
+.download:hover {
+    background-color: var(--app-font-color);
+    color: #fff;
+    transition: ease-in-out 0.25s;
+}
+
+.highlight-two {
+    font-weight: 500;
+    font-size: 25px;
+}
+
+/*--------------------------------------------*/
+/*My skill                                    */
+/*--------------------------------------------*/
+
+.skills {
+    font-size: 20px;
+    scroll-margin-top: 80px;
+}
+
+progress {
+    width: 500px;
+}
+
+.part {
+    margin-top:40px;
+}
+
+
+
+/*--------------------------------------------*/
+/*My project                                  */
+/*--------------------------------------------*/
+
+.project {
+    width: 350px;
+    height: 300px; 
+    border-radius: 40px;
+    padding: 20px 20px;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    transition: ease-in-out 0.25s;
+}
+
+.myprojects {
+    scroll-margin-top: 80px;
+}
+
+.example {
+    margin-top: 20px;
+}
+
+/*--------------------------------------------*/
+/*My education                                */
+/*--------------------------------------------*/
+
+.school {
+    margin-top: 30px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.education {
+    scroll-margin-top: 80px;
+}
+ 
+/*--------------------------------------------*/
+/*Contact me                                  */
+/*--------------------------------------------*/
+.contact {
+    scroll-margin-top: 80px;
+}
+
+.media {
+    margin:20px 20px;
+    width: 350px;
+    height: 300px; 
+    border-radius: 40px;
+    padding: 20px 20px;
+    background-color: var(--app-dark-background);
+    text-align: center;
+    display: grid;
+    place-items: center;
+
+    i {
+        font-size: 80px;
+    }
+}
+
+.fa-phone-volume {
+    color: #3a8df2;
+}
+
+.fa-envelope {
+    color: #ff9500;
+}
+
+.fa-facebook {
+    color: var(--app-font-color);
+}
+
+.fa-solid:hover, .fab:hover {
+    transform: scale(1.2);
+    transition: ease-in-out 0.25s;
+}
+
+/*--------------------------------------------*/
+/*Footer                                      */
+/*--------------------------------------------*/
+
+footer {
+    height: 72px;
+    background-color: var(--app-footer-color);
+    justify-content: center;
+    line-height: 72px;
+    font-size: 16px;
+}
+
+
+/*--------------------------------------------*/
+/*Media screen                                */
+/*--------------------------------------------*/
+
+@media screen and (max-width: 900px) {
+    .col {
+        width: calc(50% - 40px);
+    }
+
+    .example, .media {
+        width:100%;
+        width: 350px;
+    }
+}
+  
+@media screen and (max-width: 768px) {
+    .col, .example, .media {
+        width: 100%;
+    }
+}
