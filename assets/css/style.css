@@ -96,7 +96,6 @@ header {
     width: 100%; 
     z-index: 1000; 
     background-color: var(--app-light-background);
-    border-bottom: 1px solid var(--app-dark-background);
 
     h1 {
         font-size: 30px;
@@ -234,6 +233,10 @@ progress {
     margin-top:40px;
 }
 
+.item:hover {
+    transform: scale(1.05);
+    transition: ease-in-out 0.25s;
+}
 
 
 /*--------------------------------------------*/
@@ -244,6 +247,7 @@ progress {
     width: 350px;
     height: 300px; 
     border-radius: 40px;
+    box-shadow: 2px 2px 4px rgb(0 0 0 / 10%);
 }
 
 .project:hover {
@@ -291,6 +295,7 @@ progress {
     text-align: center;
     display: grid;
     place-items: center;
+    box-shadow: 2px 2px 4px rgb(0 0 0 / 10%);
 
     i {
         font-size: 80px;
