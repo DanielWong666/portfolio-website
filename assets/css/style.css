@@ -1,15 +1,12 @@
 :root {
     --app-light-background: #efedf5;
+    --app-dark-background: #c1bdcc;
     --app-font-color:#e07398;
     --app-icon-color: #5ae8b9;
     --app-footer-color:#777579;
     --app-box-radius: 15px;
     --app-button-radius: 20px;
-    --app-image-radius: 40%;
-}
-
-body {
-    background-color: var(--app-light-background);
+    --app-image-radius: 50%;
 }
 
 .to-top {
@@ -73,7 +70,11 @@ body {
 }
 
 .block {
-    margin:80px 0 150px;
+    padding:80px 0 150px;
+}
+
+main {
+    margin-top: 72px;
 }
 
 /*--------------------------------------------*/
@@ -89,6 +90,7 @@ header {
     width: 100%; 
     z-index: 1000; 
     background-color: var(--app-light-background);
+    border-bottom: 1px solid var(--app-dark-background);
 
     h1 {
         font-size: 25px;
@@ -110,17 +112,26 @@ header {
     }
 }
 
-main {
-    padding-top: 72px;
-}
-
 /*--------------------------------------------*/
 /*Home                                        */
 /*--------------------------------------------*/
 
+.hero-banner {
+    background-color: var(--app-light-background);
+    height: calc(100vh - 72px);
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin-top: 72px;
+}
+
+.image-one {
+    width:500px;
+    height:230px;
+}
 
 .intro {
-    padding: 80px 0;
+    padding: px 0;
     font-weight: 500;
 }
 
@@ -129,7 +140,7 @@ h1 {
 }
 
 .highlight-one {
-    color: var(--app-font-color)
+    color: var(--app-font-color);
 }
 
 .hire {
@@ -157,17 +168,18 @@ h1 {
 /*About Me                                    */
 /*--------------------------------------------*/
 
-.about {
-    scroll-margin-top: 80px;
+.aboutme {
+    scroll-margin-top: 72px;
 }
 
-.duan-two {
+.image-two {
     border-radius: var(--app-image-radius);
 }
 
-.aboutme {
+.aboutme-text {
     padding: 50px;
 }
+
 .detail {
     margin-top: 20px;
     font-size: 20px;
@@ -200,9 +212,10 @@ h1 {
 /*My skill                                    */
 /*--------------------------------------------*/
 
-.skills {
+.myskills {
     font-size: 20px;
-    scroll-margin-top: 80px;
+    scroll-margin-top: 72px;
+    background-color: var(--app-light-background);
 }
 
 progress {
@@ -223,7 +236,6 @@ progress {
     width: 350px;
     height: 300px; 
     border-radius: 40px;
-    padding: 20px 20px;
 }
 
 .project:hover {
@@ -231,8 +243,8 @@ progress {
     transition: ease-in-out 0.25s;
 }
 
-.myprojects {
-    scroll-margin-top: 80px;
+.my-projects {
+    scroll-margin-top: 72px;
 }
 
 .example {
@@ -249,15 +261,16 @@ progress {
     text-align: left;
 }
 
-.education {
-    scroll-margin-top: 80px;
+.my-education {
+    scroll-margin-top: 72px;
+    background-color: var(--app-light-background);
 }
  
 /*--------------------------------------------*/
 /*Contact me                                  */
 /*--------------------------------------------*/
-.contact {
-    scroll-margin-top: 80px;
+.contact-me {
+    scroll-margin-top: 72px;
 }
 
 .media {
@@ -266,7 +279,7 @@ progress {
     height: 300px; 
     border-radius: 40px;
     padding: 20px 20px;
-    background-color: var(--app-dark-background);
+    background-color: var(--app-light-background);
     text-align: center;
     display: grid;
     place-items: center;

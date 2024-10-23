@@ -19,113 +19,114 @@
   <body>
     <header>
       <div class="container flex space">
-        <a href="#main"><h1>DUAN</h1></a>
+        <a href="#"><h1>DUAN</h1></a>
         <div class="flex">
-            <a href="#main">Home</a>
+            <a href="#">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
-            <a href="#myproject">Projects</a>
+            <a href="#projects">Projects</a>
             <a href="#education">Education</a>
             <a href="#contact">Contact</a>
         </div>
       </div>
     </header>
-    <main id="main" class="container">
-      <section class="block flex row">
-        <div class="col intro">
-          <p class="highlight-one">HELLO!</p>
+    <main id="main">
+      <section class="flex row hero-banner">
+        <div class="intro container grid">
+          <img class="image-one" src="./assets/img/hello.png">
           <h1>I'm <span class="highlight-one">Duan</span></h1>
-          <h1>A <span class="highlight-one">web designer</span></h1>
+          <h1>A <span class="highlight-one">web developer</span></h1>
           <h1>based in Winnipeg</h1>
           <button class="hire" href="#">HIRE ME</button>
         </div>
-        <img class="col duan-one" src="./assets/img/home.png" alt="duan">
       </section>
 
-      <section id="about" class="about block flex row">
-        <img class="col duan-two" src="./assets/img/aboutme.png" alt="duan">
-        <div class="col aboutme">
-          <h1>About Me</h1>
-          <p>
-            I have been engaged in technical work for 
-            <span class="highlight-one">10+ years</span>. 
-            I can speak <span class="highlight-one">English & Mandarin</span> 
-            as my working language.
-          </p>
-          <div class="detail">
+      <section id="about" class="aboutme block">
+        <div class="flex container row">
+          <img class="col image-two" src="./assets/img/home.png" alt="duan">
+          <div class="col aboutme-text">
+            <h1>About Me</h1>
             <p>
-              <span class="highlight-two">Name:</span> 
-              Duan Wang
+              I have been engaged in technical work for 
+              <span class="highlight-one">10+ years</span>. 
+              I can speak <span class="highlight-one">English & Mandarin</span> 
+              as my working language.
             </p>
-            <p>
-              <span class="highlight-two">Address:</span> 
-              130 Henlow Bay, Winnipeg, MB
-            </p>
-            <p>
-              <span class="highlight-two">Zip code:</span> 
-              R3Y 1G4
-            </p>
-            <p>
-              <span class="highlight-two">Email:</span> 
-              daniel.w2301@gmail.com
-            </p>
-            <p>
-              <span class="highlight-two">Phone:</span> 
-              204-888-8888
-            </p>
+            <div class="detail">
+              <p>
+                <span class="highlight-two">Name:</span> 
+                Duan Wang
+              </p>
+              <p>
+                <span class="highlight-two">Address:</span> 
+                130 Henlow Bay, Winnipeg, MB
+              </p>
+              <p>
+                <span class="highlight-two">Zip code:</span> 
+                R3Y 1G4
+              </p>
+              <p>
+                <span class="highlight-two">Email:</span> 
+                daniel.w2301@gmail.com
+              </p>
+              <p>
+                <span class="highlight-two">Phone:</span> 
+                204-888-8888
+              </p>
+            </div>
+            <button class="download">DOWNLOAD CV</button>
           </div>
-          <button class="download">DOWNLOAD CV</button>
         </div>
       </section>
 
-      <section id="skills" class="skills block grid">
+      <section id="skills" class="myskills block grid">
         <div>
           <h1>My Skills</h1>
         </div>
-        <div class="part flex row">
+        <div class="part flex row container space">
           <div class="col">
             <p>HTML</p>
             <progress value="95" max="100"></progress>
-            <span class="percentage" id="percentage">95%</span>
+            <span>95%</span>
           </div>
           <div class="col">
             <p>Network Admin</p>
             <progress value="95" max="100"></progress>
-            <span class="percentage" id="percentage">95%</span>
+            <span>95%</span>
           </div>
         </div>
-        <div class="part flex row">
+        <div class="part flex row container space">
           <div class="col">
             <p>CSS</p>
             <progress value="90" max="100"></progress>
-            <span class="percentage" id="percentage">90%</span>
+            <span>90%</span>
           </div>
           <div class="col">
             <p>Computer Maintenance</p>
             <progress value="95" max="100"></progress>
-            <span class="percentage" id="percentage">95%</span>
+            <span>95%</span>
           </div>
         </div>
-        <div class="part flex row">
+        <div class="part flex row container space">
           <div class="col">
             <p>JavaScript</p>
             <progress value="80" max="100"></progress>
-            <span class="percentage" id="percentage">80%</span>
+            <span>80%</span>
           </div>
           <div class="col">
             <p>Product Management</p>
             <progress value="95" max="100"></progress>
-            <span class="percentage" id="percentage">95%</span>
+            <span>95%</span>
           </div>
         </div>
       </section>
-      <section id="myproject" class="myprojects block grid">
+      <section id="projects" class="my-projects block grid">
         <h1>My Project</h1>
         <p class="detail">
           Here are a few past design projects I've worked on. 
           Want to see more? Email me.
         </p>
-        <section class="flex row-three">
+        <section class="flex row-three space container">
           <div class="example">
             <a href="https://moonlit-scone-b629a3.netlify.app/" target="_blank">
               <img class="project" src="./assets/img/project-1.jpg" value="project">
@@ -143,7 +144,7 @@
           </div>
         </section>
       </section>
-      <section id="education" class="education block grid">
+      <section id="education" class="my-education block grid">
         <h1>My Education</h1>
         <div class="school grid">
           <h2><span class="highlight-one">Software Developer</span></h2>
@@ -168,10 +169,10 @@
           <p>Hubei University of Technology • Wuhan, China</p>
         </div>
       </section>
-      <section id="contact" class="contact block grid">
+      <section id="contact" class="contact-me block grid">
         <h1>Contact Me</h1>
         <p class="detail">If you want to know more about me, please contact me!</p>
-        <div class="flex row-three">
+        <div class="flex row-three space container">
           <div class="media">
             <i class="fa-solid fa-phone-volume"></i>
             <p class="detail">Phone Number: 204-888-8888</p>
