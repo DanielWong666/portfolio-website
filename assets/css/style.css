@@ -279,6 +279,7 @@ progress {
 
 .school:hover {
     background-color: #fff;
+    transition: ease-in-out 0.25s;
 }
 
 .my-education {
